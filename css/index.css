@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+
+}
+
+#bloc-page{
+
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    
+}
+
+#logo{
+
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+
+}
