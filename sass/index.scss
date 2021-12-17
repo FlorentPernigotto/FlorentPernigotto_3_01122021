@@ -54,7 +54,6 @@ header {
     gap: 2px;
     background-color: #ebebeb;
     align-items: baseline;
-    box-shadow: inset 0px 0.2px 20px -5px;
 
     #search {
         border: none;
@@ -94,6 +93,12 @@ h1 {
     -webkit-transform: scaleY(0.9);
 }
 
+h2 {
+
+    margin: 0;
+    font-size: 23px;
+
+}
 p{
     margin: 0;
     font-size: 20px;
@@ -145,6 +150,7 @@ p{
     display: flex;
     flex-direction: column;
     padding-top: 30px;
+    padding-bottom: 30px;
     gap: 20px;
 
 
@@ -208,7 +214,101 @@ p{
 
 }
 #restaurant {
+
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    align-items: center;
+    gap: 20px;
+    background-color: #f3f3f3;
+
+    .card-restaurant{
+
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+        border-radius: 20px 20px 20px 20px;
+        box-shadow: 1px 1px 20px -10px;
+
+        .picture{
+
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            position: relative;
+
+            p{
+
+                display: flex;
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                background-color: #99E2D0;
+                padding: 5px 5px 5px 5px;
+                border-radius: 5px;
+
+            }
+
+            img{
+
+                display: flex;
+                width: 100%;
+                height: 200px;
+                border-radius: 20px 20px 0px 0px;
+            }
+        }
+
+        .card-info {
+
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            padding: 20px 10px 20px 10px;
+            position: relative;
+
+            .info-restaurant {
+
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .far {
+
+                font-size: 30px;
+                font-weight: 1;
+                position: absolute;
+                right: 20px;
+
+            }
+        }
+
+    }
+    
+
+}
+
+footer {
+
+    background-color: rgb(87, 86, 86);
+    padding: 20px 20px 20px 20px;
+
+    img {
+        width: 200px;
+        height: 70px;
+    }
+
+    ul {
+        list-style: none;
+
+        a {
+            
+            text-decoration: none;
+            color: white;
+
+        }
+    }
 }
