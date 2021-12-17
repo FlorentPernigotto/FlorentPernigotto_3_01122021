@@ -1,35 +1,33 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <title>Ohmyfood</title>
-  <link rel="stylesheet" href="index.css">
-  <script src="https://kit.fontawesome.com/06c99f565d.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://kit.fontawesome.com/06c99f565d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <title>Ohmyfood</title>
 </head>
 <body>
     <div id="bloc-page">
         <header>
-            <img src="./img/logo/ohmyfood.png" alt="Ohmyfood" id="logo">
+            <img src="./img/logo/ohmyfood@2x.svg" alt="Ohmyfood" id="logo">
         </header>
         <div id="localisation">
             <i class="fas fa-map-marker-alt"></i>
-            Paris, Belleville
+            <input type="search" id="search" placeholder="Paris, Belleville">
         </div>
         <main>
             <div class="explore-restaurant">
                 <h1>
-                    Reservez le menu qui vous convient
+                    Réservez le menu qui vous convient
                 </h1>
                 <p>
                     Découvrez des restaurants d'exception, séléctionnés par nos soins.
                 </p>
-                <div class="button-explore-restaurant">
-                    <a href="#">
-                        <p>
-                            Explorer nos restaurants
-                        </p>
-                    </a>
-                </div>
+                <button>Explorer nos restaurants</button>
             </div>
             <section id="functioning">
                 <h1>
@@ -37,27 +35,17 @@
                 </h1>
                 <div id="functioning-order">
                     <div class="card-fonctioning-order">
-                        <p>
-                            Choisissez un restaurant
-                        </p>
+                        <p><span class="number-step">1</span> <span><i class="fas fa-mobile-alt"></i></span> <span class="function-name"> Choisissez un restaurant </span></p>
                     </div>
-                </div>
-                <div id="functioning-order">
                     <div class="card-fonctioning-order">
-                        <p>
-                            Composez votre menu
-                        </p>
+                        <p><span class="number-step">2</span> <span><i class="fas fa-list-ul"></i></span> <span class="function-name"> Composez votre menu </span></p>
                     </div>
-                </div>
-                <div id="functioning-order">
                     <div class="card-fonctioning-order">
-                        <p>
-                            Dégustez au restaurant
-                        </p>
+                        <p><span class="number-step">3</span> <span><i class="fas fa-store"></i></span> <span class="function-name"> Dégustez au restaurant </span></p>
                     </div>
                 </div>
             </section>
-            <section id="Restaurant">
+            <section id="restaurant">
                 <div class="card-restaurant">
                     <div class="new">
                         <p>Nouveau</p>

@@ -1,0 +1,23 @@
+{
+  "name": "p3_pernigotto_florent",
+  "version": "1.0.0",
+  "description": "Ohmyfood app food order",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/index.scss:./css/index.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlorentPernigotto/P3_Pernigotto_Florent.git"
+  },
+  "keywords": [
+    "Pernigotto_Florent_P3",
+    "Ohmyfood"
+  ],
+  "author": "Pernigotto Florent",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FlorentPernigotto/P3_Pernigotto_Florent/issues"
+  },
+  "homepage": "https://github.com/FlorentPernigotto/P3_Pernigotto_Florent#readme"
+}

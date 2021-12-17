@@ -1,0 +1,214 @@
+@media screen and ( max-width: 668px) {
+    
+}
+
+*{
+    box-sizing: border-box;
+}
+
+img {
+    width: 300px;
+    height: 100px;
+}
+html, body, ul{
+
+    font-family: Roboto, sans-serif;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+}
+
+#bloc-page{
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+
+    #logo {
+        position: relative;
+        top: 10px;
+        height: 50%;
+
+    }
+}
+
+/* SECTION RESEARCH */
+
+#localisation {
+
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    gap: 2px;
+    background-color: #ebebeb;
+    align-items: baseline;
+    box-shadow: inset 0px 0.2px 20px -5px;
+
+    #search {
+        border: none;
+        background-color: #ebebeb;
+    }
+
+    ::placeholder {
+
+        text-align: center;
+        height: 50px;
+        color: black;
+        font-size: 15px;
+        font-weight: 550;
+
+    }
+    
+}
+
+/* Corp principal du site */
+
+main {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Style H1 / P */
+
+h1 {
+    
+    margin: 0;
+    font-size: 27px;
+    font-weight: 700;
+    font-stretch: expanded;
+    -webkit-transform: scaleY(0.9);
+}
+
+p{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 1;
+    -webkit-transform: scaleY(0.9);
+}
+
+/* SECTION 1 */
+.explore-restaurant {
+
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px 40px 20px;
+    background-color: #f3f3f3;
+    gap: 10px;
+
+
+    h1 {
+
+        text-align: center;
+        margin-left: 60px;
+        margin-right: 50px;
+        }
+    
+    p {
+        text-align: center;
+    }
+
+    button {
+
+        border: none;
+        align-self: center;
+        width: 200px;
+        margin-top: 10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 30px 30px 30px 30px;
+        background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+        color: white;
+        font-size: 15px;
+        font-weight: 549;
+        font-stretch: 100;
+    }
+}
+
+/* SECTION 2 */
+
+#functioning{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    gap: 20px;
+
+
+    h1{
+        margin-left: 10px;
+    }
+
+    #functioning-order {
+        
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .card-fonctioning-order{
+
+            display: flex;
+            flex-direction: row;
+            border-radius: 20px 20px 20px 20px;
+            width: 85%;
+            align-self: center;
+            background-color: #f3f3f3;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            box-shadow: 1px 1px 20px -10px;
+
+            p{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                position: relative;
+                font-size: large;
+                font-weight: 750;
+                gap: 20px;
+                
+                /* steps number functioning*/
+                .number-step {
+                    position: relative;
+                    background-color: #9356DC;
+                    border: 3px solid #9356DC;
+                    border-radius: 100%;
+                    padding: 0px 4px 0px 4px;
+                    color: white;
+                    font-size: 15px;
+                    left: -8px;
+
+                }
+                .fas {
+                    color: grey;
+                    
+                }
+
+                .function-name{
+
+                    align-self: center;
+
+                }
+
+            }
+        }
+    }
+
+}
+#restaurant {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
