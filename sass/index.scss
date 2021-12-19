@@ -6,16 +6,11 @@
     box-sizing: border-box;
 }
 
-img {
-    width: 300px;
-    height: 100px;
-}
 html, body, ul{
 
     font-family: Roboto, sans-serif;
     padding: 0;
     margin: 0;
-    width: 100%;
 
 }
 
@@ -24,7 +19,7 @@ html, body, ul{
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
     justify-content: center;
 }
 
@@ -33,7 +28,6 @@ header {
     height: 50px;
     width: 100%;
     justify-content: center;
-    margin-top: 20px;
 
     #logo {
         position: relative;
@@ -213,6 +207,8 @@ p{
     }
 
 }
+
+/* SECTION RESTAURANT 
 #restaurant {
 
     display: flex;
@@ -224,6 +220,7 @@ p{
     gap: 20px;
     background-color: #f3f3f3;
 
+/* CARD RESTAURANT */
     .card-restaurant{
 
         display: flex;
@@ -233,6 +230,7 @@ p{
         border-radius: 20px 20px 20px 20px;
         box-shadow: 1px 1px 20px -10px;
 
+    /* PICTURE OF FOOD FROM RESTAURANT */
         .picture{
 
             display: flex;
@@ -261,6 +259,7 @@ p{
             }
         }
 
+    /* INFORMATION OF RESTAURANT */
         .card-info {
 
             display: flex;
@@ -268,7 +267,8 @@ p{
             width: 100%;
             padding: 20px 10px 20px 10px;
             position: relative;
-
+        
+        /* RESTAURANT NAME AND CITY */
             .info-restaurant {
 
                 display: flex;
@@ -276,10 +276,12 @@ p{
                 width: 100%;
             }
 
+        /* ICO FA "HEART" */
             .far {
 
-                font-size: 30px;
+                font-size: 25px;
                 font-weight: 1;
+                font-stretch: condensed;
                 position: absolute;
                 right: 20px;
 
@@ -291,24 +293,51 @@ p{
 
 }
 
+/* FOOTER */
 footer {
 
     background-color: rgb(87, 86, 86);
     padding: 20px 20px 20px 20px;
 
-    img {
-        width: 200px;
-        height: 70px;
+/* LOGO .SVG Ohmyfood FOOTER*/
+    svg {
+
+        width: 100px;
+        height: 40px;
+        path{
+
+            fill: #ffffff;
+        }
     }
 
+/* List footer */
     ul {
+
+        display: flex;
+        flex-direction: column;
         list-style: none;
+        gap: 5px;
+        li {
 
-        a {
-            
-            text-decoration: none;
-            color: white;
+            display: flex;
+            a {
+                
+                text-decoration: none;
+                color: white;
+            /* ICO FA IN FOOTER */
+                .fa-utensils {
 
+                    font-size: 15px;
+                    margin-right: 5px;
+
+                }
+                .fa-hands-helping {
+
+                    font-size: 10px;
+                    margin-right: 5px;
+
+                }
+            }
         }
     }
 }
