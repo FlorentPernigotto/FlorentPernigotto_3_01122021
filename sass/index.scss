@@ -8,7 +8,6 @@
 
 html, body, ul{
 
-    font-family: Roboto, sans-serif;
     padding: 0;
     margin: 0;
 
@@ -23,17 +22,45 @@ html, body, ul{
     justify-content: center;
 }
 
+/* Style H1 / P */
+
+h1 {
+    
+    font-family: 'Shrikhand', sans-serif;
+    margin: 0;
+}
+
+h2 {
+
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    font-size: 23px;
+
+}
+h3 {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    font-size: 17px;
+}
+
+/*HEADER STYLE */
+
 header {
     display: flex;
-    height: 50px;
+    height: 70px;
     width: 100%;
     justify-content: center;
+    padding-top: 20px;
+    margin-bottom: 10px;
 
-    #logo {
-        position: relative;
-        top: 10px;
-        height: 50%;
-
+    h1 {
+        font-size: 35px;
     }
 }
 
@@ -48,6 +75,7 @@ header {
     gap: 2px;
     background-color: #ebebeb;
     align-items: baseline;
+    box-shadow: inset 0px 5px 10px -10px;
 
     #search {
         border: none;
@@ -60,7 +88,8 @@ header {
         height: 50px;
         color: black;
         font-size: 15px;
-        font-weight: 550;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
 
     }
     
@@ -76,30 +105,6 @@ main {
     width: 100%;
 }
 
-/* Style H1 / P */
-
-h1 {
-    
-    margin: 0;
-    font-size: 27px;
-    font-weight: 700;
-    font-stretch: expanded;
-    -webkit-transform: scaleY(0.9);
-}
-
-h2 {
-
-    margin: 0;
-    font-size: 23px;
-
-}
-p{
-    margin: 0;
-    font-size: 20px;
-    font-weight: 1;
-    -webkit-transform: scaleY(0.9);
-}
-
 /* SECTION 1 */
 .explore-restaurant {
 
@@ -110,11 +115,12 @@ p{
     gap: 10px;
 
 
-    h1 {
+    h2 {
 
         text-align: center;
         margin-left: 60px;
         margin-right: 50px;
+        font-weight: 900;
         }
     
     p {
@@ -132,9 +138,9 @@ p{
         border-radius: 30px 30px 30px 30px;
         background: linear-gradient(to bottom right, #FF79DA, #9356DC);
         color: white;
+        font-family: 'Roboto', sans-serif;
         font-size: 15px;
-        font-weight: 549;
-        font-stretch: 100;
+        box-shadow: 5px 5px 20px -10px;
     }
 }
 
@@ -148,8 +154,8 @@ p{
     gap: 20px;
 
 
-    h1{
-        margin-left: 10px;
+    h2{
+        margin-left: 30px;
     }
 
     #functioning-order {
@@ -176,7 +182,6 @@ p{
                 justify-content: space-between;
                 position: relative;
                 font-size: large;
-                font-weight: 750;
                 gap: 20px;
                 
                 /* steps number functioning*/
@@ -192,45 +197,62 @@ p{
 
                 }
                 .fas {
+
                     color: grey;
                     
+                }
+                .fas:hover {
+                    color: #9356DC;
                 }
 
                 .function-name{
 
                     align-self: center;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 15px;
+                    font-weight: 600;
 
                 }
 
             }
         }
+        .card-fonctioning-order:hover {
+            background-color: rgb(147, 86, 220, 0.2);
+            
+        }
     }
 
 }
 
-/* SECTION RESTAURANT 
+/* SECTION RESTAURANT */
 #restaurant {
 
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-top: 20px;
+    padding-top: 60px;
     padding-bottom: 60px;
     align-items: center;
     gap: 20px;
     background-color: #f3f3f3;
 
-/* CARD RESTAURANT */
+    h2 {
+
+        align-self: flex-start;
+        margin-left: 30px;
+    }
+
+    /* CARD RESTAURANT */
     .card-restaurant{
 
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 90%;
         align-items: center;
         border-radius: 20px 20px 20px 20px;
         box-shadow: 1px 1px 20px -10px;
 
-    /* PICTURE OF FOOD FROM RESTAURANT */
+        /* PICTURE OF FOOD FROM RESTAURANT */
         .picture{
 
             display: flex;
@@ -245,8 +267,10 @@ p{
                 right: 10px;
                 top: 10px;
                 background-color: #99E2D0;
-                padding: 5px 5px 5px 5px;
+                padding: 10px 10px 10px 10px;
                 border-radius: 5px;
+                color: #2d8f76;
+                font-weight: 500;
 
             }
 
@@ -256,10 +280,11 @@ p{
                 width: 100%;
                 height: 200px;
                 border-radius: 20px 20px 0px 0px;
+                object-fit: cover;
             }
         }
 
-    /* INFORMATION OF RESTAURANT */
+        /* INFORMATION OF RESTAURANT */
         .card-info {
 
             display: flex;
@@ -268,25 +293,41 @@ p{
             padding: 20px 10px 20px 10px;
             position: relative;
         
-        /* RESTAURANT NAME AND CITY */
+            /* RESTAURANT NAME AND CITY */
             .info-restaurant {
 
                 display: flex;
                 flex-direction: column;
                 width: 100%;
+
+                h3 {
+                    font-family: 'Roboto', sans-serif;
+                }
             }
 
-        /* ICO FA "HEART" */
-            .far {
+            /* ICO FA "HEART" */
+            .far { /*Difficulté a appliqué une couleur dégradé sur toute la surface du :hover*/
 
+                display: block;
                 font-size: 25px;
-                font-weight: 1;
                 font-stretch: condensed;
                 position: absolute;
                 right: 20px;
+                color: black;
+
+            }
+            .far:hover {
+                
+                font-size: 25px;
+                color: #9c47fc;
+                display: block;
+                background: -webkit-linear-gradient(#9c47fc, #FF79DA);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
 
             }
         }
+        
 
     }
     
@@ -299,7 +340,7 @@ footer {
     background-color: rgb(87, 86, 86);
     padding: 20px 20px 20px 20px;
 
-/* LOGO .SVG Ohmyfood FOOTER*/
+    /* LOGO .SVG Ohmyfood FOOTER*/
     svg {
 
         width: 100px;
@@ -310,7 +351,7 @@ footer {
         }
     }
 
-/* List footer */
+    /* List footer */
     ul {
 
         display: flex;
@@ -324,7 +365,7 @@ footer {
                 
                 text-decoration: none;
                 color: white;
-            /* ICO FA IN FOOTER */
+                /* ICO FA IN FOOTER */
                 .fa-utensils {
 
                     font-size: 15px;

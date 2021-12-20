@@ -1,17 +1,303 @@
-/* Error: unmatched "}".
- *     ,
- * 294 | }
- *     | ^
- *     '
- *   sass\index.scss 294:1  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: unmatched "}".\a     \2577 \a 294 \2502  }\d\a     \2502  ^\a     \2575 \a   sass\\index.scss 294:1  root stylesheet';
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
 }
+
+html, body, ul {
+  padding: 0;
+  margin: 0;
+}
+
+#bloc-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  justify-content: center;
+}
+
+/* Style H1 / P */
+h1 {
+  font-family: "Shrikhand", sans-serif;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  font-size: 23px;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  font-size: 17px;
+}
+
+/*HEADER STYLE */
+header {
+  display: flex;
+  height: 70px;
+  width: 100%;
+  justify-content: center;
+  padding-top: 20px;
+  margin-bottom: 10px;
+}
+header h1 {
+  font-size: 35px;
+}
+
+/* SECTION RESEARCH */
+#localisation {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  gap: 2px;
+  background-color: #ebebeb;
+  align-items: baseline;
+  box-shadow: inset 0px 5px 10px -10px;
+}
+#localisation #search {
+  border: none;
+  background-color: #ebebeb;
+}
+#localisation ::placeholder {
+  text-align: center;
+  height: 50px;
+  color: black;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+/* Corp principal du site */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+/* SECTION 1 */
+.explore-restaurant {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px 40px 20px;
+  background-color: #f3f3f3;
+  gap: 10px;
+}
+.explore-restaurant h2 {
+  text-align: center;
+  margin-left: 60px;
+  margin-right: 50px;
+  font-weight: 900;
+}
+.explore-restaurant p {
+  text-align: center;
+}
+.explore-restaurant button {
+  border: none;
+  align-self: center;
+  width: 200px;
+  margin-top: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 30px 30px 30px 30px;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  box-shadow: 5px 5px 20px -10px;
+}
+
+/* SECTION 2 */
+#functioning {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  gap: 20px;
+}
+#functioning h2 {
+  margin-left: 30px;
+}
+#functioning #functioning-order {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#functioning #functioning-order .card-fonctioning-order {
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px 20px 20px 20px;
+  width: 85%;
+  align-self: center;
+  background-color: #f3f3f3;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 1px 1px 20px -10px;
+}
+#functioning #functioning-order .card-fonctioning-order p {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  font-size: large;
+  gap: 20px;
+  /* steps number functioning*/
+}
+#functioning #functioning-order .card-fonctioning-order p .number-step {
+  position: relative;
+  background-color: #9356DC;
+  border: 3px solid #9356DC;
+  border-radius: 100%;
+  padding: 0px 4px 0px 4px;
+  color: white;
+  font-size: 15px;
+  left: -8px;
+}
+#functioning #functioning-order .card-fonctioning-order p .fas {
+  color: grey;
+}
+#functioning #functioning-order .card-fonctioning-order p .fas:hover {
+  color: #9356DC;
+}
+#functioning #functioning-order .card-fonctioning-order p .function-name {
+  align-self: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+#functioning #functioning-order .card-fonctioning-order:hover {
+  background-color: rgba(147, 86, 220, 0.2);
+}
+
+/* SECTION RESTAURANT */
+#restaurant {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  align-items: center;
+  gap: 20px;
+  background-color: #f3f3f3;
+  /* CARD RESTAURANT */
+}
+#restaurant h2 {
+  align-self: flex-start;
+  margin-left: 30px;
+}
+#restaurant .card-restaurant {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 1px 1px 20px -10px;
+  /* PICTURE OF FOOD FROM RESTAURANT */
+  /* INFORMATION OF RESTAURANT */
+}
+#restaurant .card-restaurant .picture {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+#restaurant .card-restaurant .picture p {
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: #99E2D0;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  color: #2d8f76;
+  font-weight: 500;
+}
+#restaurant .card-restaurant .picture img {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
+}
+#restaurant .card-restaurant .card-info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 20px 10px 20px 10px;
+  position: relative;
+  /* RESTAURANT NAME AND CITY */
+  /* ICO FA "HEART" */
+}
+#restaurant .card-restaurant .card-info .info-restaurant {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#restaurant .card-restaurant .card-info .info-restaurant h3 {
+  font-family: "Roboto", sans-serif;
+}
+#restaurant .card-restaurant .card-info .far {
+  /*Difficulté a appliqué une couleur dégradé sur toute la surface du :hover*/
+  display: block;
+  font-size: 25px;
+  font-stretch: condensed;
+  position: absolute;
+  right: 20px;
+  color: black;
+}
+#restaurant .card-restaurant .card-info .far:hover {
+  font-size: 25px;
+  color: #9c47fc;
+  display: block;
+  background: -webkit-linear-gradient(#9c47fc, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* FOOTER */
+footer {
+  background-color: #575656;
+  padding: 20px 20px 20px 20px;
+  /* LOGO .SVG Ohmyfood FOOTER*/
+  /* List footer */
+}
+footer svg {
+  width: 100px;
+  height: 40px;
+}
+footer svg path {
+  fill: #ffffff;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 5px;
+}
+footer ul li {
+  display: flex;
+}
+footer ul li a {
+  text-decoration: none;
+  color: white;
+  /* ICO FA IN FOOTER */
+}
+footer ul li a .fa-utensils {
+  font-size: 15px;
+  margin-right: 5px;
+}
+footer ul li a .fa-hands-helping {
+  font-size: 10px;
+  margin-right: 5px;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,45 @@
+img {
+  width: 100px;
+  height: 100px;
+}
+
+/*# sourceMappingURL=alafrancaise.css.map */
+@media screen and ( max-width: 668px) {
+    
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html, body, ul{
+
+    font-family: Roboto, sans-serif;
+    padding: 0;
+    margin: 0;
+
+}
+
+#bloc-page{
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    justify-content: center;
+
+
+    #logo {
+        position: relative;
+        top: 10px;
+        height: 50%;
+
+    }
+}
