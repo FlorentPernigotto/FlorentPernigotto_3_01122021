@@ -62,8 +62,7 @@ header h1 {
 }
 
 #pic-restaurant {
-  width: 100%;
-  height: 300px;
+  object-fit: fill;
 }
 
 main {
@@ -177,4 +176,4 @@ footer ul li a .fa-hands-helping {
   margin-right: 5px;
 }
 
-/*# sourceMappingURL=alafrancaise.css.map */
+/*# sourceMappingURL=ledelicesdessens.css.map */

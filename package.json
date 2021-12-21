@@ -4,7 +4,7 @@
   "description": "Ohmyfood app food order",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/index.scss:./css/index.css"
+    "sass": "sass --watch ./sass/ledelicedessens.scss:./css/ledelicesdessens.css"
   },
   "repository": {
     "type": "git",
