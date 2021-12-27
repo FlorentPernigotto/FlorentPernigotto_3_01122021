@@ -60,6 +60,7 @@ header {
 #pic-restaurant{
     width: 100%;
     height: 300px;
+    object-fit: cover; 
 
 }
 main{
@@ -70,7 +71,7 @@ main{
     header {
         h1{
             text-align: left;
-            margin-left: 25px;
+            margin-left: 5%;
         }
     }
     section{ /*Bleu clair */

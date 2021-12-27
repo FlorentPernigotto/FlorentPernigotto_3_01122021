@@ -6,7 +6,7 @@ body{
 /* Style H1 H2 H3 */
 
 h1{
-    font-family: 'Shrikhand', cursive;
+    font-family: 'Shrikhand', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -29,37 +29,38 @@ p{
     margin: 0;
     padding: 0;
 }
+
 body{
-    width: 100%;
+    max-width: 100%;
 }
-
-#bloc-page{
-    width: 100%;
-}
-
-header {
+#block-page, header{
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: 50px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    .fas {
-        font-size: 20px;
-        position: relative;
-        left: 20px;
-        top: 20px;
-        width: 30%;
+    justify-content: center;
+    align-items: baseline;
+    height: 60px;
+    color: black;
+    
+    #logo{
+        display: flex;
+        width: 100%;
     }
-    h1{
-        display: block;
-        flex-direction: row;
-        margin-top: 10px;
+    .fas {
+        display: flex;
+        width: 100px;
+        height: 50px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: larger;
     }
 }
 #pic-restaurant{
+    display: flex;
+    justify-self: center;
     width: 100%;
     height: 300px;
+    object-fit: cover;
 
 }
 main{
@@ -67,26 +68,32 @@ main{
     flex-direction: column;
     width: 100%;
     background-color: whitesmoke;
-    header {
+    margin-top: 10%;
+    border-radius: 20px 20px 20px 20px;
+    .head-menu-card {
         h1{
+            display: flex;
             text-align: left;
-            margin-left: 25px;
+            margin-left: 5%;
         }
     }
-    section{ /*Bleu clair */
+    .section-menu-card{ /*Bleu clair */
         display: flex;
         flex-direction: column;
         background-color: whitesmoke;
+        justify-content: center;
         width: 90%;
         gap: 20px;
         margin-left: 5%;
         margin-right: 5%;
         margin-bottom: 20px;
+        h2{
+            span {
+                display: inline-block;
+                border-bottom: 2px solid rgb(7, 168, 101);
+            }
+        }
     }
-    h2{
-        padding-left: 5px;
-    }
-    
     .menu-card{/*vert*/
         display: flex;
         flex-direction: row;
@@ -183,5 +190,3 @@ footer {
         }
     }
 }
-
-

@@ -5,7 +5,7 @@ body {
 
 /* Style H1 H2 H3 */
 h1 {
-  font-family: "Shrikhand", cursive;
+  font-family: "Shrikhand", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -33,37 +33,37 @@ p {
 }
 
 body {
-  width: 100%;
+  max-width: 100%;
 }
 
-#bloc-page {
-  width: 100%;
-}
-
-header {
+#block-page, header {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  height: 60px;
+  color: black;
+}
+#block-page #logo, header #logo {
+  display: flex;
   width: 100%;
+}
+#block-page .fas, header .fas {
+  display: flex;
+  width: 100px;
   height: 50px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-header .fas {
-  font-size: 20px;
-  position: relative;
-  left: 20px;
+  position: absolute;
   top: 20px;
-  width: 30%;
-}
-header h1 {
-  display: block;
-  flex-direction: row;
-  margin-top: 10px;
+  left: 20px;
+  font-size: larger;
 }
 
 #pic-restaurant {
+  display: flex;
+  justify-self: center;
   width: 100%;
   height: 300px;
+  object-fit: cover;
 }
 
 main {
@@ -71,24 +71,29 @@ main {
   flex-direction: column;
   width: 100%;
   background-color: whitesmoke;
+  margin-top: 10%;
+  border-radius: 20px 20px 20px 20px;
 }
-main header h1 {
+main .head-menu-card h1 {
+  display: flex;
   text-align: left;
-  margin-left: 25px;
+  margin-left: 5%;
 }
-main section {
+main .section-menu-card {
   /*Bleu clair */
   display: flex;
   flex-direction: column;
   background-color: whitesmoke;
+  justify-content: center;
   width: 90%;
   gap: 20px;
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 20px;
 }
-main h2 {
-  padding-left: 5px;
+main .section-menu-card h2 span {
+  display: inline-block;
+  border-bottom: 2px solid #07a865;
 }
 main .menu-card {
   /*vert*/
@@ -177,4 +182,4 @@ footer ul li a .fa-hands-helping {
   margin-right: 5px;
 }
 
-/*# sourceMappingURL=alafrancaise.css.map */
+/*# sourceMappingURL=menu-restaurant.css.map */
