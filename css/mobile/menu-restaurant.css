@@ -8,6 +8,7 @@ h1 {
   font-family: "Shrikhand", sans-serif;
   margin: 0;
   padding: 0;
+  font-size: 30px;
 }
 
 h2 {
@@ -47,6 +48,14 @@ body {
 #block-page #logo, header #logo {
   display: flex;
   width: 100%;
+  position: absolute;
+  left: 40%;
+}
+#block-page a, header a {
+  width: 100px;
+  height: 100px;
+  color: black;
+  text-decoration: none;
 }
 #block-page .fas, header .fas {
   display: flex;
@@ -71,13 +80,13 @@ main {
   flex-direction: column;
   width: 100%;
   background-color: whitesmoke;
-  margin-top: 10%;
   border-radius: 20px 20px 20px 20px;
 }
-main .head-menu-card h1 {
-  display: flex;
+main .head-menu-card .restaurant-name {
+  display: inline;
   text-align: left;
-  margin-left: 5%;
+  width: 100%;
+  margin-left: 30px;
 }
 main .section-menu-card {
   /*Bleu clair */
