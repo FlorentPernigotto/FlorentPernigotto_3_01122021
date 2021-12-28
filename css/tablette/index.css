@@ -1,0 +1,21 @@
+@media screen and (min-width: 767px) and (max-width: 1000px) {
+  #functioning {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  #functioning h2 {
+    align-self: center;
+    margin: 0%;
+  }
+  #functioning #functioning-order {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-self: center;
+    flex-wrap: wrap;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

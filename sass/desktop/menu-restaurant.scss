@@ -1,0 +1,14 @@
+@media screen and (min-width:1000px)  {
+
+    #section-menu-card{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .menu-card{
+            display: flex;
+            align-self: center;
+        }
+    }
+
+}
