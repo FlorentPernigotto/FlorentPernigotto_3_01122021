@@ -154,7 +154,11 @@ main {
         color: white;
         font-family: 'Roboto', sans-serif;
         font-size: 15px;
-        box-shadow: 5px 5px 20px -10px;
+        box-shadow: 5px 5px 20px -10px black;
+        a{
+            text-decoration: none;
+            color: white;
+        }
 
     }
 }
@@ -284,11 +288,14 @@ main {
 
         display: flex;
         flex-direction: column;
-
         align-items: center;
         border-radius: 20px 20px 20px 20px;
         box-shadow: 1px 1px 20px -10px;
-
+        &:hover {
+                transform: scale(1.05);
+                transition-duration: 200ms;
+                box-shadow: 5px 5px 20px -10px;
+            }
         /* PICTURE OF FOOD FROM RESTAURANT */
 
         .picture{

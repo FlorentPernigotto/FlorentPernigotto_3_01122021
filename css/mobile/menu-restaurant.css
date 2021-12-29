@@ -116,42 +116,87 @@ main a {
   text-decoration: none;
   color: black;
   width: 100%;
-  padding: 2%;
 }
-main .menu-card {
+main a .menu-card {
   /*vert*/
   display: flex;
   flex-direction: row;
   width: 90%;
   background-color: white;
   border-radius: 15px;
+  padding: 20px;
   box-shadow: 5px 5px 10px -10px;
-  padding: 10px 20px 10px 10px;
+  font-size: 21px;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  /* Firefox */
+  -webkit-animation: fadein 2s;
+  /* Safari and Chrome */
+  -o-animation: fadein 2s;
+  /* Opera */
+  animation-delay: 200ms;
 }
-main .menu-card:hover {
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+main a:hover {
+  transform: scale(1.1);
+  transition-duration: 200ms;
   box-shadow: 5px 5px 20px -10px;
 }
-main .menu-card .menu-card-info {
+main a .menu-card-info {
   /*beige*/
   width: 80%;
 }
-main .menu-card .menu-card-info h3 {
+main a .menu-card-info h3 {
   /*orange*/
   margin: 0;
   padding: 0;
   width: 100%;
   padding-bottom: 5px;
 }
-main .menu-card .menu-card-info p {
+main a .menu-card-info p {
   /*orange*/
   margin: 0;
   padding: 0;
   width: 100%;
 }
-main .menu-card .menu-card-price {
+main a .menu-card-price {
   width: 20%;
 }
-main .menu-card .menu-card-price p {
+main a .menu-card-price p {
   font-weight: 900;
   margin-top: 30px;
   text-align: end;

@@ -116,46 +116,82 @@ main{
         text-decoration: none;
         color: black;
         width: 100%;
-        padding: 2%;
-    }
-    .menu-card{/*vert*/
-        display: flex;
-        flex-direction: row;
-        width: 90%;
-        background-color: white;
-        border-radius: 15px;
-        box-shadow: 5px 5px 10px -10px;
-        padding: 10px 20px 10px 10px;
-        &:hover {
-            box-shadow: 5px 5px 20px -10px;
-        }
+        .menu-card{/*vert*/
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            background-color: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 5px 5px 10px -10px;
+            font-size: 21px;
+            animation: fadein 2s;
+            -moz-animation: fadein 2s; /* Firefox */
+            -webkit-animation: fadein 2s; /* Safari and Chrome */
+            -o-animation: fadein 2s; /* Opera */
+            animation-delay: 200ms;
+            }
+            @keyframes fadein {
+                from {
+                    opacity:0;
+                }
+                to {
+                    opacity:1;
+                }
+            }
+            @-moz-keyframes fadein { /* Firefox */
+                from {
+                    opacity:0;
+                }
+                to {
+                    opacity:1;
+                }
+            }
+            @-webkit-keyframes fadein { /* Safari and Chrome */
+                from {
+                    opacity:0;
+                }
+                to {
+                    opacity:1;
+                }
+            }
+            @-o-keyframes fadein { /* Opera */
+                from {
+                    opacity:0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+            &:hover {
+                transform: scale(1.1);
+                transition-duration: 200ms;
+                box-shadow: 5px 5px 20px -10px;
+            }
 
-        .menu-card-info{/*beige*/
-            width: 80%;
-            h3{/*orange*/
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                padding-bottom: 5px;
-            }
-            p{/*orange*/
-                margin: 0;
-                padding: 0;
-                width: 100%;
+            .menu-card-info{/*beige*/
+                width: 80%;
+                h3{/*orange*/
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+                    padding-bottom: 5px;
+                }
+                p{/*orange*/
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
 
+                }
             }
-        }
-        .menu-card-price{
-            width: 20%;
-            p{
-                font-weight: 900;
-                margin-top: 30px;
-                text-align: end;
+            .menu-card-price{
+                width: 20%;
+                p{
+                    font-weight: 900;
+                    margin-top: 30px;
+                    text-align: end;
+                }
             }
-        }
-    }
-    &::hover{
-        
     }
     button {
         border: none;
