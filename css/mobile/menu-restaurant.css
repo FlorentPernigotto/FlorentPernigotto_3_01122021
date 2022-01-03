@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
@@ -85,16 +86,33 @@ main {
   background-color: whitesmoke;
 }
 main .head-menu-card {
+  display: flex;
+  flex-direction: row;
   background-color: whitesmoke;
   border-radius: 35px 35px 0px 0px;
   padding: 10px 0px 0px 10px;
   margin: -35px 0px 5px 0px;
+  /* ICO FA "HEART" */
 }
 main .head-menu-card .restaurant-name {
   display: inline;
   text-align: left;
   width: 100%;
   margin-left: 3%;
+}
+main .head-menu-card .fas {
+  /*Difficulté a appliqué une couleur dégradé sur toute la surface du :hover*/
+  font-size: 32px;
+  padding-right: 60px;
+  padding-top: 20px;
+}
+main .head-menu-card .fas:hover {
+  font-size: 32px;
+  color: black;
+  display: block;
+  background: -webkit-linear-gradient(#9c47fc, #356ad2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 main .section-menu-card {
   /*Bleu clair */
