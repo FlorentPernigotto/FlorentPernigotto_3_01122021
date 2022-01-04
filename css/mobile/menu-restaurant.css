@@ -89,12 +89,16 @@ body {
 .like-empty-heart {
   width: 1.5rem;
   position: absolute;
+  right: 20px;
+  top: 10px;
 }
 
 .like-full-heart {
   width: 1.5rem;
   position: absolute;
   opacity: 0;
+  right: 20px;
+  top: 10px;
 }
 
 .like-full-heart:hover {
@@ -120,7 +124,7 @@ main .head-menu-card {
 main .head-menu-card .restaurant-name {
   display: inline;
   text-align: left;
-  width: 100%;
+  width: 80%;
   margin-left: 3%;
 }
 main .section-menu-card {
