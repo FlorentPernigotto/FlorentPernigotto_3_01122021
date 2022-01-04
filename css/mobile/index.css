@@ -213,6 +213,7 @@ main {
   align-items: center;
   border-radius: 20px 20px 20px 20px;
   box-shadow: 1px 1px 20px -10px;
+  height: 200px;
   /* PICTURE OF FOOD FROM RESTAURANT */
   /* INFORMATION OF RESTAURANT */
 }
@@ -241,7 +242,7 @@ main {
 #restaurant .card-restaurant .picture img {
   display: flex;
   width: 100%;
-  height: 300px;
+  height: 120px;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
 }
