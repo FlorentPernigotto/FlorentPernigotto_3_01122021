@@ -89,7 +89,7 @@ body {
 .like-empty-heart {
   width: 1.5rem;
   position: absolute;
-  right: 20px;
+  right: 10px;
   top: 10px;
 }
 
@@ -97,7 +97,7 @@ body {
   width: 1.5rem;
   position: absolute;
   opacity: 0;
-  right: 20px;
+  right: 10px;
   top: 10px;
 }
 
@@ -171,7 +171,7 @@ main a .menu-card {
 }
 main a:hover {
   transform: scale(1.1);
-  transition-duration: 200ms;
+  transition-duration: 100ms;
   box-shadow: 5px 5px 20px -10px;
 }
 main a .menu-card-info {

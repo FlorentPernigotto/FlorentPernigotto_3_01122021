@@ -1,4 +1,4 @@
-@media screen and (min-width:1000px)  {
+@media screen and (min-width:1025px){
 
     #functioning {
 
@@ -18,6 +18,23 @@
             flex-wrap: wrap;
         }   
         
+    }
+
+    .card-container {
+
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        a {
+            display: flex;
+            width: 20%;
+            height: 400px;
+            .card-restaurant {
+                display: flex;
+                width: 20%;
+                height: 400px;
+            }
+        }
     }
 
 }

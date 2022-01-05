@@ -261,120 +261,140 @@ main {
     width: 100%;
     padding-top: 60px;
     padding-bottom: 60px;
-    align-items: center;
     gap: 20px;
     background-color: #f3f3f3;
-    flex-wrap: wrap;
 
     h2 {
 
-        align-self: flex-start;
-        margin-left: 30px;
-
-    }
-
-    a {
-
+        align-self: center;
         width: 90%;
-        align-items: center;
-        text-decoration: none;
-        color: black;
 
     }
-
-    /* CARD RESTAURANT */
-
-    .card-restaurant{
+    .card-container {
 
         display: flex;
         flex-direction: column;
         align-items: center;
-        border-radius: 20px 20px 20px 20px;
-        box-shadow: 1px 1px 20px -10px;
-        height: 200px;
+        width: 100%;
+        height: auto;
+        gap: 20px;
 
-        &:hover {
-                transform: scale(1.05);
-                transition-duration: 200ms;
-                box-shadow: 5px 5px 20px -10px;
-            }
-        /* PICTURE OF FOOD FROM RESTAURANT */
+        a {
 
-        .picture{
+            width: 90%;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+
+        }
+
+        /* CARD RESTAURANT */
+
+        .card-restaurant{
 
             display: flex;
             flex-direction: column;
-            width: 100%;
-            position: relative;
+            align-items: center;
+            border-radius: 20px 20px 20px 20px;
+            box-shadow: 1px 1px 20px -10px;
+            height: 200px;
 
-            p{
+            &:hover {
+                    transform: scale(1.05);
+                    transition-duration: 200ms;
+                    box-shadow: 5px 5px 20px -10px;
+                }
+            /* PICTURE OF FOOD FROM RESTAURANT */
 
-                display: flex;
-                position: absolute;
-                right: 10px;
-                top: 10px;
-                background-color: #99E2D0;
-                padding: 10px 10px 10px 10px;
-                border-radius: 5px;
-                color: #2d8f76;
-                font-weight: 500;
-
-            }
-
-            img{
-
-                display: flex;
-                width: 100%;
-                height: 120px; 
-                border-radius: 20px 20px 0px 0px;
-                object-fit: cover;
-
-            }
-        }
-
-        /* INFORMATION OF RESTAURANT */
-        .card-info {
-
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            padding: 20px 10px 20px 10px;
-            position: relative;
-        
-            /* RESTAURANT NAME AND CITY */
-
-            .info-restaurant {
+            .picture{
 
                 display: flex;
                 flex-direction: column;
                 width: 100%;
+                position: relative;
 
-                h3 {
+                p{
 
-                    font-family: 'Roboto', sans-serif;
+                    display: flex;
+                    position: absolute;
+                    right: 10px;
+                    top: 10px;
+                    background-color: #99E2D0;
+                    padding: 10px 10px 10px 10px;
+                    border-radius: 5px;
+                    color: #2d8f76;
+                    font-weight: 500;
+
+                }
+
+                img{
+
+                    display: flex;
+                    width: 100%;
+                    height: 120px; 
+                    border-radius: 20px 20px 0px 0px;
+                    object-fit: cover;
 
                 }
             }
 
-            /* ICO FA "HEART" */
-            .far { /*Difficulté a appliqué une couleur dégradé sur toute la surface du :hover*/
+            /* INFORMATION OF RESTAURANT */
+            .card-info {
 
-                display: block;
-                font-size: 25px;
-                font-stretch: condensed;
-                position: absolute;
-                right: 20px;
-                color: black;
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                padding: 20px 10px 20px 10px;
+                position: relative;
+            
+                /* RESTAURANT NAME AND CITY */
 
-            }
-            .far:hover {
-                
-                font-size: 25px;
-                color: #9c47fc;
-                display: block;
-                background: -webkit-linear-gradient(#9c47fc, #FF79DA);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+                .info-restaurant {
+
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+
+                    .name-localisation-restaurant {
+                        display: flex;
+                        flex-direction: column;
+                        width: 90%;
+                        h3 {
+
+                            font-family: 'Roboto', sans-serif;
+
+                        }
+                    }
+                    .like,
+                    .like-empty-heart {
+                        
+                    position: relative;
+                    width: 3rem;
+                    cursor: pointer;
+                    }
+
+                    .like-empty-heart {
+                        width: 2rem;
+                        position: absolute;
+                        path {
+                            fill: black;
+
+                        }
+                    }
+
+                    .like-full-heart {
+                    width: 2rem;
+                    position: absolute;
+                    opacity: 0;
+                    
+                    }
+
+                    .like-full-heart:hover {
+                    opacity: 1;
+                    transition: 500ms ease-in-out;
+                    }
+
+                }
 
             }
         }
