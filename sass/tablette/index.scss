@@ -12,11 +12,19 @@
         }
         #functioning-order {
             display: flex;
-            flex-direction: column;
-            width: 60%;
-            align-self: center;
+            flex-direction: row;
+            width: 100%;
+            justify-content: center;
+            gap: 40px;
             flex-wrap: wrap;
+            .card-fonctioning-order {
+                margin-right: 20px;
+                width: 26%;
+                height: 70px;
+                .number-step {
+                    height: 23px;
+                }
+            }
         }   
-        
     }
 }

@@ -11,10 +11,18 @@
   }
   #functioning #functioning-order {
     display: flex;
-    flex-direction: column;
-    width: 60%;
-    align-self: center;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 40px;
     flex-wrap: wrap;
+  }
+  #functioning #functioning-order .card-fonctioning-order {
+    width: 30%;
+    height: 70px;
+  }
+  #functioning #functioning-order .card-fonctioning-order .number-step {
+    height: 23px;
   }
 
   .card-container {
@@ -22,13 +30,8 @@
     flex-direction: row;
     width: 100%;
   }
-  .card-container a {
-    display: flex;
-    width: 20%;
-    height: 400px;
-  }
-  .card-container a .card-restaurant {
-    display: flex;
+  .card-container .card-restaurant {
+    display: block;
     width: 20%;
     height: 400px;
   }

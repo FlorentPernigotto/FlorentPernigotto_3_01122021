@@ -12,12 +12,19 @@
         }
         #functioning-order {
             display: flex;
-            flex-direction: column;
-            width: 60%;
-            align-self: center;
+            flex-direction: row;
+            width: 100%;
+            justify-content: center;
+            gap: 40px;
             flex-wrap: wrap;
+            .card-fonctioning-order {
+                width: 30%;
+                height: 70px;
+                .number-step {
+                    height: 23px;
+                }
+            }
         }   
-        
     }
 
     .card-container {
@@ -25,15 +32,11 @@
         display: flex;
         flex-direction: row;
         width: 100%;
-        a {
-            display: flex;
+        .card-restaurant {
+            display: block;
             width: 20%;
             height: 400px;
-            .card-restaurant {
-                display: flex;
-                width: 20%;
-                height: 400px;
-            }
+            
         }
     }
 
