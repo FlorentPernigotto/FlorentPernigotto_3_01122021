@@ -49,19 +49,21 @@ body {
 #block-page #logo, header #logo {
   display: flex;
   width: 100%;
-  justify-self: center;
   flex-grow: 2;
   justify-content: center;
 }
 #block-page a, header a {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   color: black;
   text-decoration: none;
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }
 #block-page a .fas, header a .fas {
   display: flex;
-  width: 100px;
+  width: 50px;
   height: 50px;
   position: absolute;
   top: 20px;
@@ -131,10 +133,14 @@ main .section-menu-card {
   /*Bleu clair */
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 95%;
+  align-items: center;
+  width: 90%;
   gap: 20px;
   margin: 10px;
+}
+main .section-menu-card h2 {
+  align-self: flex-start;
+  margin-left: 25px;
 }
 main .section-menu-card h2 span {
   display: inline-block;
@@ -143,7 +149,7 @@ main .section-menu-card h2 span {
 main a {
   text-decoration: none;
   color: black;
-  width: 100%;
+  width: 90%;
 }
 main a .menu-card {
   display: flex;
@@ -151,13 +157,45 @@ main a .menu-card {
   box-sizing: border-box;
   background: #eeeeee;
   border-radius: 10px;
-  width: 90%;
+  width: 100%;
   height: 60px;
-  margin: 0 auto;
+  margin: 0;
   padding: 10px;
   animation-name: slideIn;
   animation-duration: 1s;
   animation-timing-function: linear;
+}
+main a .menu-card .check-add {
+  display: none;
+  position: relative;
+  right: -10px;
+  top: -10px;
+  align-items: center;
+  justify-content: center;
+  background-color: #99E2D0;
+  border-radius: 0px 10px 10px 0px;
+  width: 100px;
+  height: 60px;
+  transition-duration: 400ms;
+}
+main a .menu-card .check-add .fa-check-circle {
+  display: flex;
+  color: white;
+  font-size: 20px;
+}
+main a .menu-card:hover .check-add {
+  display: flex;
+  animation: slideRight;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+}
+@keyframes slideRight {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 100px;
+  }
 }
 @keyframes slideIn {
   from {
@@ -168,11 +206,6 @@ main a .menu-card {
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
-}
-main a:hover {
-  transform: scale(1.1);
-  transition-duration: 100ms;
-  box-shadow: 5px 5px 20px -10px;
 }
 main a .menu-card-info {
   /*beige*/
