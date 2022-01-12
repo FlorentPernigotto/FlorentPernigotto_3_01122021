@@ -181,6 +181,16 @@ main{
                     display: flex;
                     color: white;
                     font-size: 20px;
+                    animation: checkRotate;
+                    animation-duration: 0.5s;
+                }
+                @keyframes checkRotate{
+                    from{
+                        transform: rotate(0deg);
+                    }
+                    to {
+                        transform: rotate(360deg);
+                    }
                 }
                 
             }
