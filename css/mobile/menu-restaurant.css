@@ -229,13 +229,18 @@ main a .menu-card-info h3 {
   margin: 0;
   padding: 0;
   width: 100%;
+  height: 30px;
+  overflow: hidden;
 }
 main a .menu-card-info p {
   /*orange*/
+  display: inline;
   margin: 0;
   padding: 0;
   width: 100%;
+  height: 20px;
   overflow: hidden;
+  text-overflow: "...";
 }
 main a .menu-card-price {
   display: flex;
