@@ -218,29 +218,29 @@ main a .menu-card:hover .check-add {
   }
 }
 main a .menu-card-info {
-  /*beige*/
   width: 90%;
   display: flex;
   flex-direction: column;
   margin-bottom: 5px;
 }
 main a .menu-card-info h3 {
-  /*orange*/
   margin: 0;
   padding: 0;
   width: 100%;
   height: 30px;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  /*avec le white space */
 }
 main a .menu-card-info p {
-  /*orange*/
   display: inline;
   margin: 0;
   padding: 0;
   width: 100%;
   height: 20px;
   overflow: hidden;
-  text-overflow: "...";
+  text-overflow: ellipsis;
 }
 main a .menu-card-price {
   display: flex;

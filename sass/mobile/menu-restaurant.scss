@@ -221,26 +221,29 @@ main{
             }
         }
 
-            .menu-card-info{/*beige*/
+            .menu-card-info{
                 width: 90%;
                 display: flex;
                 flex-direction: column;
                 margin-bottom: 5px;
-                h3{/*orange*/
+                h3{
                     margin: 0;
                     padding: 0;
                     width: 100%;
                     height: 30px;
                     overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    /*avec le white space */
                 }
-                p{/*orange*/
+                p{
                     display: inline;
                     margin: 0;
                     padding: 0;
                     width: 100%;
                     height: 20px;
                     overflow: hidden;
-                    text-overflow: "...";
+                    text-overflow: ellipsis;
 
                 }
             }
