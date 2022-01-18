@@ -134,7 +134,7 @@ main .section-menu-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
+  width: 100%;
   gap: 20px;
   margin: 10px;
 }
@@ -249,7 +249,8 @@ main a .menu-card-price p {
   font-weight: 900;
   height: auto;
 }
-main button {
+main .order-buy {
+  cursor: pointer;
   border: none;
   align-self: center;
   width: 200px;
@@ -259,10 +260,16 @@ main button {
   padding-bottom: 15px;
   border-radius: 30px 30px 30px 30px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  text-align: center;
   color: white;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
-  box-shadow: 5px 5px 20px -10px;
+  box-shadow: 5px 5px 20px -10px black;
+}
+main .order-buy:hover {
+  box-shadow: 10px 10px 30px -10px black;
+  transform: scale(1.05);
+  transition-duration: 200ms;
 }
 
 footer {

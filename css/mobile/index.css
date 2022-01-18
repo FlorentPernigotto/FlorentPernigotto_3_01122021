@@ -15,6 +15,75 @@ html, body, ul {
   justify-content: center;
 }
 
+/* Spin Loader */
+.spin-loader-container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  animation: loader 2s;
+  animation-delay: 0s;
+  animation-fill-mode: none;
+  animation-delay: 1.75s;
+  animation-fill-mode: both;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spin-loader {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.spin-loader div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: #dfc;
+  animation: spinnerLoader 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+
+.spin-loader div:nth-child(1) {
+  left: 8px;
+  background-color: #9356DC;
+  animation-delay: -0.24s;
+}
+
+.spin-loader div:nth-child(2) {
+  left: 32px;
+  background-color: #FF79DA;
+  animation-delay: -0.12s;
+}
+
+.spin-loader div:nth-child(3) {
+  left: 56px;
+  background-color: #99E2D0;
+  animation-delay: 0;
+}
+
+@keyframes spinnerLoader {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  50%, 100% {
+    top: 24px;
+    height: 32px;
+  }
+}
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
 /* Style H1 / P */
 h1 {
   font-family: "Shrikhand", sans-serif;
@@ -121,6 +190,11 @@ main {
 .explore-restaurant .explore a {
   text-decoration: none;
   color: white;
+}
+.explore-restaurant .explore:hover {
+  box-shadow: 10px 10px 30px -10px black;
+  transform: scale(1.05);
+  transition-duration: 200ms;
 }
 
 /* SECTION 2 */

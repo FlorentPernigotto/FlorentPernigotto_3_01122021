@@ -14,7 +14,7 @@
     flex-direction: row;
     width: 100%;
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
     flex-wrap: wrap;
   }
   #functioning #functioning-order .card-fonctioning-order {

@@ -15,7 +15,7 @@
             flex-direction: row;
             width: 100%;
             justify-content: center;
-            gap: 40px;
+            gap: 20px;
             flex-wrap: wrap;
             .card-fonctioning-order {
                 margin-right: 20px;
@@ -26,5 +26,7 @@
                 }
             }
         }   
+        
     }
+
 }
