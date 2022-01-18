@@ -230,11 +230,8 @@ main a .menu-card-info h3 {
   height: 30px;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
-  /*avec le white space */
 }
 main a .menu-card-info p {
-  display: inline;
   margin: 0;
   padding: 0;
   width: 100%;
